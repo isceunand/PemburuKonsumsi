@@ -53,6 +53,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="10dp"
+                    android:singleLine="true"
                     android:hint="Username"/>
 
             </LinearLayout>
@@ -89,6 +90,7 @@
                     android:layout_height="match_parent"
                     android:padding="10dp"
                     android:hint="Password"
+                    android:singleLine="true"
                     android:inputType="textPassword"/>
 
             </LinearLayout>
