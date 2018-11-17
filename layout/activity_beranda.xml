@@ -10,327 +10,199 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:minHeight="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </android.support.v7.widget.Toolbar>
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:gravity="center_horizontal"
+            android:minHeight="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/group_1"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
+                    android:background="#ffffff"
+                    android:orientation="vertical">
 
-                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:id="@+id/profile_image"
-                        android:layout_width="57dp"
-                        android:layout_height="57dp"
-                        android:src="@drawable/arab_woman"
-                        app:civ_border_color="#ffffff"
-                        app:civ_border_width="2dp" />
-
-                    <EditText
-                        android:layout_width="260dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
-                        android:background="#ebf2f0"
-                        android:hint="Apa yang anda pikirkan ?"
-                        android:padding="10dp" />
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="57dp"
+                            android:layout_height="57dp"
+                            android:src="@drawable/arab_woman"
+                            app:civ_border_color="#ffffff"
+                            app:civ_border_width="2dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#ebf2f0"
+                            android:hint="Apa yang anda pikirkan ?"
+                            android:padding="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:paddingRight="10dp">
+
+                        <ImageButton
+                            android:layout_width="130dp"
+                            android:layout_height="40dp"
+                            android:background="#fff"/>
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#48cfae"
+                            android:text="bagikan"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
-                <LinearLayout
+                <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="7dp">
 
-                    <Button
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="230dp"
-                        android:backgroundTint="#48cfae"
-                        android:text="bagikan"
-                        android:textColor="#ffffff" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/arab_woman"
+                                app:civ_border_color="#ffffff"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:id="@+id/username"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="syamsidar_"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="10dp"
+                            android:text="Lorem dawdawda wdawdaw ddfse ndajn dbaw jbwadj dabw bdauwbd fsed sddsf esfes  sefef sef"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/arab_woman"
+                                app:civ_border_color="#ffffff"
+                                app:civ_border_width="2dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="syamsidar_"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="10dp"
+                            android:text="Lorem dawdawda wdawdaw ddfse ndajn dbaw jbwadj dabw bdauwbd fsed sddsf esfes  sefef sef"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
 
 
             </LinearLayout>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginRight="5dp"
-                android:padding="7dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:orientation="horizontal"
-                        android:padding="8dp">
-
-                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arab_woman"
-                            app:civ_border_color="#ffffff"
-                            app:civ_border_width="2dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
-                            android:text="syamsidar_"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:paddingBottom="10dp"
-                        android:text="Lorem dawdawda wdawdaw ddfse ndajn dbaw jbwadj dabw bdauwbd fsed sddsf esfes  sefef sef"
-                        android:textSize="18dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="200dp"
-                            android:drawableLeft="@drawable/like"
-                            android:drawablePadding="8dp"
-                            android:gravity="center"
-                            android:text="120"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:drawableLeft="@drawable/komen"
-                            android:drawablePadding="8dp"
-                            android:gravity="center"
-                            android:text="120"
-                            android:textSize="15dp"
-
-                            />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginRight="5dp"
-                android:padding="7dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:orientation="horizontal"
-                        android:padding="8dp">
-
-                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arab_woman"
-                            app:civ_border_color="#ffffff"
-                            app:civ_border_width="2dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
-                            android:text="syamsidar_"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:paddingBottom="10dp"
-                        android:text="Lorem dawdawda wdawdaw ddfse ndajn dbaw jbwadj dabw bdauwbd fsed sddsf esfes  sefef sef"
-                        android:textSize="18dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="200dp"
-                            android:drawableLeft="@drawable/like"
-                            android:drawablePadding="8dp"
-                            android:gravity="center"
-                            android:text="120"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:drawableLeft="@drawable/komen"
-                            android:drawablePadding="8dp"
-                            android:gravity="center"
-                            android:text="120"
-                            android:textSize="15dp"
-
-                            />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginRight="5dp"
-                android:padding="7dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:orientation="horizontal"
-                        android:padding="8dp">
-
-                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/arab_woman"
-                            app:civ_border_color="#ffffff"
-                            app:civ_border_width="2dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="10dp"
-                            android:text="syamsidar_"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="15dp"
-                        android:paddingRight="15dp"
-                        android:paddingBottom="10dp"
-                        android:text="Lorem dawdawda wdawdaw ddfse ndajn dbaw jbwadj dabw bdauwbd fsed sddsf esfes  sefef sef"
-                        android:textSize="18dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="200dp"
-                            android:drawableLeft="@drawable/like"
-                            android:drawablePadding="8dp"
-                            android:gravity="center"
-                            android:text="120"
-                            android:textSize="15dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:drawableLeft="@drawable/komen"
-                            android:drawablePadding="8dp"
-                            android:gravity="center"
-                            android:text="120"
-                            android:textSize="15dp"
-
-                            />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
-
-        </LinearLayout>
-
-    </ScrollView>
+        </ScrollView>
 
     </LinearLayout>
 
@@ -340,7 +212,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
+        android:background="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
