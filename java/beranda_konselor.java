@@ -8,13 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.ListView;
+import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.administrator.icare.Adapter.FriendMessageAdapter;
 import com.example.administrator.icare.Adapter.ListBeranda;
 import com.example.administrator.icare.Model.ListBerandaModel;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,9 +25,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class Beranda extends AppCompatActivity {
+public class beranda_konselor extends AppCompatActivity {
 
-    EditText statusDen;
     TextView username;
     String email, strUsername;
     private FirebaseAuth auth;
@@ -40,9 +35,9 @@ public class Beranda extends AppCompatActivity {
     private RecyclerView recyclerView;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference refStatus = database.getReference("berandaSobat");
-    DatabaseReference sobat = database.getReference("sobat");
+    DatabaseReference sobat = database.getReference("konselor");
 
-        private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -52,11 +47,11 @@ public class Beranda extends AppCompatActivity {
 //                    Intent beranda = new Intent(Beranda.this, Beranda.class);
                     return true;
                 case R.id.navigation_chat:
-                    Intent chat = new Intent (Beranda.this, Chat.class);
+                    Intent chat = new Intent (beranda_konselor.this, Chat.class);
                     startActivity(chat);
                     return true;
                 case R.id.navigation_profil:
-                    Intent profil = new Intent (Beranda.this,  profile_user.class);
+                    Intent profil = new Intent (beranda_konselor.this,  profil_konselor.class);
                     startActivity(profil);
                     return true;
             }
@@ -67,9 +62,8 @@ public class Beranda extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beranda);
+        setContentView(R.layout.activity_beranda_konselor);
         auth = FirebaseAuth.getInstance();
-        statusDen = findViewById(R.id.statusKu);
 //        mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -138,4 +132,5 @@ public class Beranda extends AppCompatActivity {
             email = (currentUser.getEmail());
         }
     }
+
 }

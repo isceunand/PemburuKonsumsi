@@ -30,39 +30,38 @@ public class Pilih extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pilih);
 
-
-        informasi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Initialize a new instance of LayoutInflater service
-                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(LAYOUT_INFLATER_SERVICE);
-
-                View customView = inflater.inflate(R.layout.activity_popup_pilih, null);
-
-                popUpPilih = new PopupWindow(
-                        customView,
-                        LayoutParams.WRAP_CONTENT,
-                        LayoutParams.WRAP_CONTENT
-                );
-                if(Build.VERSION.SDK_INT>=21){
-                    popUpPilih.setElevation(5.0f);
-                }
-
-                // Get a reference for the custom view close button
-                Button close = (Button) customView.findViewById(R.id.close);
-
-                close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        // Dismiss the popup window
-                        popUpPilih.dismiss();
-
-                    }
-                });
-
-                popUpPilih.showAtLocation(mRelativeLayout, Gravity.CENTER,0,0);
-            }
-        });
+//        informasi.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                // Initialize a new instance of LayoutInflater service
+//                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(LAYOUT_INFLATER_SERVICE);
+//
+//                View customView = inflater.inflate(R.layout.activity_popup_pilih, null);
+//
+//                popUpPilih = new PopupWindow(
+//                        customView,
+//                        LayoutParams.WRAP_CONTENT,
+//                        LayoutParams.WRAP_CONTENT
+//                );
+//                if(Build.VERSION.SDK_INT>=21){
+//                    popUpPilih.setElevation(5.0f);
+//                }
+//
+//                // Get a reference for the custom view close button
+//                Button close = (Button) customView.findViewById(R.id.close);
+//
+//                close.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        // Dismiss the popup window
+//                        popUpPilih.dismiss();
+//
+//                    }
+//                });
+//
+//                popUpPilih.showAtLocation(mRelativeLayout, Gravity.CENTER,0,0);
+//            }
+//        });
 
         Tombol();
     }
