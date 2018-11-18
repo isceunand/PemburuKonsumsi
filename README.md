@@ -29,3 +29,9 @@
 - Pastikan link aplikasi yang dikirim peserta dapat berfungsi dengan baik
 
 LINK APLIKASI => "https://drive.google.com/drive/folders/1HHeSLRjxjW1X80AZFXQM4Hb5nEfqPELY?usp=sharing"
+Login :
+username = wildan@gmail.com
+pass = wildan123
+
+username = andi@gmail.com
+pass = andi123
